@@ -1,0 +1,34 @@
+data_compressed/
+data_compressed/
+data_csv/
+data_compressed.zip
+.combined_files.csv
+.combined_csv_v1.csv
+*.csv
+*.zip
+*.xlsx
+*.xls
+*.7z
+*.rar
+*.gz
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+Thumbs.db
+# Data & large artifacts (local only)
+data_compressed/
+data_csv/
+outputs/
+*.zip
+*.csv
+*.parquet
+
+# Notebook checkpoints / temp
+.ipynb_checkpoints/
+*.ipynb~*
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
