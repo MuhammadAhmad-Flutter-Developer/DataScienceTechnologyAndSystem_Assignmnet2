@@ -1,6 +1,9 @@
-# Flight Delay Prediction — Part A (On-Premises)
+# Data Science Technology and Systems - Assignment 2
 
-This repository contains the **on-premises** machine-learning pipeline for predicting whether a flight will arrive **15+ minutes late** (`target = 1`).  
+## Project Overview
+This repository contains the implementation of a data science pipeline for Semester 3 Data Science Technology and Systems course, Assignment 2.
+
+## Repository Structure
 
 ## What this project does
 - Loads & filters BTS On-Time Performance data (2014–2018 subset)
@@ -10,11 +13,13 @@ This repository contains the **on-premises** machine-learning pipeline for predi
 - Evaluation: Confusion matrix, ROC curve, and metrics (Accuracy, Precision, Recall, Specificity, F1, ROC-AUC)
 - Exports **combined_csv_v1.csv** for Part B (not checked into Git)
 
+
 ## Repo layout
-- `onpremises.ipynb` — main notebook (run top→bottom; relative paths)
-- `requirements.txt` — Python dependencies
-- `README.md` — this file
-- `.gitignore` — excludes data and heavy artifacts
+├── oncloud.ipynb # Jupyter notebook for cloud implementation
+├── onpremises.ipynb # Jupyter notebook for on-premises implementation
+├── Final_Project_Data_Science_Pipeline.pdf # Project documentation
+├── requirements.txt # Python dependencies
+└── readme.md # This file
 
 > **Excluded locally (reproducible by running the notebook):**  
 > `data_compressed/`, `data_csv/`, `outputs/`, any `*.zip` / `*.csv`.
@@ -28,17 +33,13 @@ pip install -r requirements.txt
 
 
 # ======= =======
-GITHUB_USER="kabitaadhikari"
-REPO_NAME="flight-delay-part-a"
+GITHUB_USER="MuhammadAhmad-Flutter-Developer"
+REPO_NAME="DataScienceTechnologyAndSystem_Assignmnet2 "
 # ============================================================
 
 # my project folder
-cd "C:/Users/kkabi/Desktop/Assignments/Data Science pipeline_final project" || exit 1
+cd "C:/Users/M AHMAD/Desktop/SEMESTER 2 UC/UC SEMESTER 3/Data Science technology and systems/Assignment 2" || exit 1
 
-# Rename notebook (remove spaces)
-if [ -f "onpremises final submission.ipynb" ]; then
-  mv "onpremises final submission.ipynb" "onpremises.ipynb"
-fi
 
 # .gitignore – exclude data & large artifacts
 cat > .gitignore << 'EOF'
